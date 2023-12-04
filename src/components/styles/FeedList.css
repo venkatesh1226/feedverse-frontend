@@ -1,0 +1,17 @@
+.feed-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    /* margin: auto; */
+    
+  }
+  
+
+  @media (max-width: 768px) {
+    .feed-list {
+      max-width: 90%;
+    }
+  }
+  
