@@ -1,0 +1,19 @@
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a dynamic number of columns */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .user-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Smaller columns for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .user-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Even smaller columns for mobile screens */
+  }
+}

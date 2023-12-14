@@ -1,40 +1,55 @@
 .post {
-  background: rgba(255, 255, 255, 0.7); /* Glass effect to match profile view */
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 20px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.5); /* Neumorphic effect */
-  max-width: 400px; /* Fixed width */
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  max-width: 500px; /* Adjust as needed */
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Glass effect */
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(255, 255, 255, 0.7); /* Neumorphism */
+  color: #333;
+  overflow: hidden;
 }
 
 .post-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
-  width: 100%;
-  color: black;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .post-user {
   font-weight: bold;
+  font-size: 1.1em;
 }
 
-.post-time {
-  font-size: 0.8rem;
-  color: #777;
+.post-menu {
+  cursor: pointer;
+}
+
+.post-menu-options {
+  position: absolute;
+  background: white;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  right: 20px;
+  top: 50px;
 }
 
 .post-content {
-  font-size: 1rem;
-  line-height: 1.4;
-  color: black;
+  font-size: 1em;
+  margin-bottom: 15px;
+  word-break: break-word;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .post {
-    max-width: 90%;
-  }
+.post-footer {
+  align-self: flex-end;
+}
+
+.post-time {
+  font-size: 0.8em;
+  opacity: 0.7;
 }

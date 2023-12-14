@@ -7,6 +7,36 @@
     /* margin: auto; */
     
   }
+
+  .sub-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* FeedList.css */
+
+/* Styles for the refresh button */
+.refresh-button {
+  padding: 10px 15px;
+  background-color: rgb(136, 84, 248); 
+  height: 3rem;
+  color: white; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0; /* Spacing around the button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.refresh-button:hover {
+  background-color:rgb(179,145,254);
+}
+
+.image {
+  width: 25%;
+  height: auto;
+}
   
 
   @media (max-width: 768px) {

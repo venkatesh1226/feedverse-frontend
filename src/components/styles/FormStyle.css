@@ -10,6 +10,24 @@ form{
     
 }
 
+
+.google-sign-in-button {
+    background-color: #4285F4; /* Google's blue */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Spacing between the Google button and the form */
+    margin-top: 20px;
+  }
+  
+  .google-sign-in-button:hover {
+    background-color: #357ae8;
+  }
+  
+
 /* Form Container with Glassmorphism */
 .form-container {
     background: rgba(255, 255, 255, 0.2);  
@@ -109,4 +127,23 @@ form{
         width: 150px;
         height: 150px;
     }
+}
+
+.email-otp-container {
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing */
+    align-items: center;
+    align-items: center; /* Aligns items vertically */
+    margin-bottom: 20px; /* Spacing below the container */
+}
+
+.email-otp-container input {
+    flex-grow: 1; /* Allows input to take available space */
+    margin-right: 10px; /* Spacing between input and button */
+    
+}
+
+.email-otp-container button {
+    white-space: nowrap; /* Prevents button text from wrapping */
+    margin-bottom: 20px;
 }

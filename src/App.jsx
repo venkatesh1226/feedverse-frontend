@@ -7,6 +7,10 @@ import Navbar from "./components/Navbar";
 import FeedList from "./components/FeedList";
 import ProfileView from "./components/ProfileView";
 import { AuthProvider } from "./AuthContext";
+import WritePost from "./components/WritePost";
+import Profile from "./components/Profile";
+import FindFriends from "./components/FindFriends";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   var [posts, setPosts] = useState([
@@ -54,19 +58,21 @@ function App() {
             exact
             path="/"
             element={
-              sessionStorage.getItem("token") && (
-                <div className="main-container">
-                  <ProfileView />
+              // sessionStorage.getItem("username") != null && (
+              <div className="main-container">
+                <ProfileView />
 
-                  <FeedList posts={posts} />
-                </div>
-              )
+                <FeedList />
+              </div>
+              // )
             }
           />
-          {/* <Route path="/find-friends" component={FindFriendsPage} /> */}
-          {/* <Route path="/my-profile" component={MyProfile} /> */}
+          <Route path="/find-friends" element={<FindFriends />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/signup" element={<SignupForm />} />
+          <Route path="/user/:username" element={<Profile />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+
           {/* You can add a 404 Not Found route here */}
         </Routes>
       </Router>

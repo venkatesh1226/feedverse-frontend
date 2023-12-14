@@ -1,0 +1,52 @@
+.user {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  position: relative;
+  width: 100%; /* Full width of the grid column */
+  padding-bottom: 100%; /* Maintain square aspect ratio */
+
+  overflow: hidden;
+  cursor: pointer; /* Optional, if you want the whole card to be clickable */
+}
+
+.user-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  padding: 10px;
+}
+
+.user-info h4, .user-info p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.follow-button {
+  position: absolute;
+  bottom: 10px;
+  width: calc(100% - 20px); /* Adjust width as needed */
+  padding: 10px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background: #5CDB95;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.follow-button:hover {
+  background-color: #379683;
+}
+

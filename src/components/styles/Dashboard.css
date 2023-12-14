@@ -1,0 +1,31 @@
+/* Dashboard container */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Individual chart container */
+  .chart {
+    background: rgba(255, 255, 255, 0.7); /* Glass effect */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.5); /* Neumorphism */
+    width: auto; /* Adjust width as needed */
+    margin: 10px;
+  }
+  
+  /* Chart title */
+  .chart h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #333; /* Adjust for better visibility against light background */
+    font-size: 1.5em; /* Adjust size as needed */
+    text-align: center;
+  }
+  
+  /* Adjustments for responsiveness or specific layout requirements can be added here */
+  

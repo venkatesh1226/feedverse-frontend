@@ -1,8 +1,13 @@
 /* Base styles for the profile view */
-.profile-view {
+.container{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.profile {
   position: sticky;
   top: 0;
-  width: 20%;
+  width: 70%;
   height: fit-content;
   padding: 20px;
   margin: 20px 10px;
@@ -94,19 +99,52 @@
   background-color: rgba(255, 255, 255, 0.6);
 }
 
+.follower-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  list-style-type: none;
+}
+
+.follower-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.follower-username {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.follower-stats span {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  font-size: 0.9em;
+}
+
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .profile-view {
-    display: none;
+  .profile {
+    /* display: none; */
     position: relative;
     width: 100%;
     margin: 20px 0;
   }
 }
 
-/* @media (max-width: 480px) {
-  .profile-picture {
-    width: 60%;
+@media (max-width: 600px) {
+  .follower-item {
+    padding: 5px;
   }
-} */
+  .follower-stats span {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+

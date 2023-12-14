@@ -1,9 +1,19 @@
 import React, { useState } from "react";
 import "./styles/WritePost.css"; // Importing the CSS file
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom/dist";
+import { postapi } from "../constant";
 
-const WritePost = () => {
+const WritePost = ({ writeHandler }) => {
   const [postText, setPostText] = useState("");
   const maxCharacterLimit = 280;
+  const username = localStorage.getItem("username");
+  const naviagte = useNavigate();
+  useEffect(() => {
+    if (username === null || username === undefined) {
+      naviagte("/login");
+    }
+  }, [username]);
 
   const handleTextChange = (event) => {
     if (event.target.value.length <= maxCharacterLimit) {
@@ -12,8 +22,13 @@ const WritePost = () => {
   };
 
   const handleSubmit = () => {
-    console.log("Submitted Post:", postText);
-    setPostText("");
+    const sucess = writeHandler(postText);
+    if (sucess) {
+      setPostText("");
+    } else {
+      console.log("Error in posting");
+    }
+    // This will log immediately after the request is sent
   };
 
   return (
