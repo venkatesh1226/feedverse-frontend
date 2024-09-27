@@ -9,7 +9,7 @@ Feedverse is a distributed Twitter-like application designed for seamless tweet 
 
 - **Front-end:** React
 - **Back-end:** Spring Boot
-- **Database:** MySQL
+- **Database:** MySQL, Neo4j
 - **Containerization:** Docker
 - **Cloud Platform:** AWS
 - **Event-Driven Architecture:** Kafka
@@ -44,13 +44,13 @@ The Post Microservice handles the uploading and posting functionality in the Fee
 
 ## Authentication Microservice
 
-[Authentication Microservice Repository](https://github.com/your-username/authentication-microservice)
+[Authentication Microservice Repository](https://github.com/venkatesh1226/feedverse-signup)
 
 The Authentication Microservice is dedicated to handling user registration and login functionalities.
 
 ## Docker Compose
 
-[Docker Compose Repository](https://github.com/venkatesh1226/feedverse-signup)
+[Docker Compose Repository](https://github.com/venkatesh1226/feedverse-docker)
 
 The Docker Compose repository contains the configuration files for orchestrating the deployment of all services in a Docker environment.
 
